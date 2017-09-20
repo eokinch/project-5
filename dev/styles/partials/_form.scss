@@ -1,0 +1,163 @@
+
+.spiceSelect_PlaylistLoad {
+	@media (min-width: 940px) {
+		display: inline-block;
+		width: 49%;
+		margin-right: 1%;
+	}
+}
+
+label {
+	display: block;
+	clear: both;
+	color: white;
+}
+
+.spiceBox{
+	background: $tsfwBlack;
+	clear: both;
+	padding: 15px;
+	label{
+		text-align-last: center;
+		padding: 5px 0 20px 0;
+	}
+	@media (min-width: 550px) {
+		padding: 30px;
+
+	}
+	
+}
+.spiceBox-onLoad {
+	@media (min-width: 940px) {
+		max-width: 100%;
+	}
+}
+
+.spiceBox_PlaylistLoad {
+	@media (min-width: 940px) {
+		max-width: 100%;
+	}
+	.noBox {
+		&::before {
+			width: 110%;
+		}
+	}
+}
+.chiliBox {
+	margin: 0 auto;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.chili {
+	width: calc(100% / 6);
+	padding: 0;
+	display: block;
+	float: left;
+	fill: white;
+}
+#chili0{
+	fill: $tsfwRed;
+		z-index: -1;
+}
+.noBox{
+	position: relative;
+	border: 5px solid $tsfwRed;
+	border-radius: 100%;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:47%;
+		transform: translateY(-50%) rotate(45deg);
+		height: 5px;
+		width: 105%;
+		z-index: 100;
+		background-color: $tsfwRed;
+
+	}
+	@media (min-width: 940px) {
+		border: 5px solid $tsfwRed;
+		&::before{
+			height: 5px;
+		}
+	}
+}
+.redChili {
+	fill: $tsfwRed;
+}
+.rangeLabel{
+	margin-top: 8%;
+	text-align: center;
+}
+#spiceLevel{
+	appearance: none;
+	display: block;
+	height: 5px;
+	width: 90%;
+	margin: 0 auto;
+	background: linear-gradient(to right, white, rgba(139, 0, 0, 1) );
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #f5ffff;
+  height: 30px;
+  width: 16px;
+  background: #f5ffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.select-label {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.genreSelection-onLoad {
+	@media (min-width: 940px) {
+		width: 100%;
+	}
+}
+
+.genreSelection_PlaylistLoad {
+	@media (min-width: 940px) {
+		width: 100%;
+
+	}
+}
+
+.genre-select {
+	appearance: none;
+	padding: 15px 20px;
+	background: $tsfwBlack;
+	border: none;
+	display: block;
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+
+.genreSubmit {
+	width: 50%;
+	padding: 15px 20px;
+	background: $tsfwBlack ;
+	border: none;
+	text-transform: uppercase;
+	appearance: none;
+	color: white;
+	margin-bottom: 20px;
+	@media (min-width: 400px) {
+		width: 40%;
+
+	}
+	@media (min-width: 550px) {
+		width: 30%;
+
+	}
+}

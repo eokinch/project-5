@@ -1,0 +1,128 @@
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/form';
+
+html {
+	font-size: 62.5%;
+	text-transform: uppercase;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header {
+	min-height: 30vh;
+	padding: 20px;
+	@media (min-width: 940px) {
+		padding-top: 40px;
+	}
+}
+
+h1 {
+	margin: 0;
+	@include arimo(50, 700);
+	letter-spacing: 5px;
+	color: $tsfwBlack;
+	line-height: 50px;
+}
+.break {
+	display: block;
+}
+.spicyBreak {
+	color: $tsfwRed;
+	text-shadow: 0px -5px 12px $tsfwRed;
+	padding-top: 5px;
+}
+h2 {
+	margin: 0;
+	@include arimo(25, 400);
+	letter-spacing: 2px;
+	color: $tsfwRed;
+}
+
+
+form, .output {
+	@include arimo(16, 400)
+}
+
+select {
+	border-radius: 0;
+}
+
+.main {
+	padding: 20px;
+	@media (min-width: 940px) {
+		padding: 0;
+		min-height: 50vh;
+	}
+}
+
+.output {
+	@media (min-width: 940px) {
+		width: 49%;
+		margin-left: 1%;
+		float: right;
+		position: relative;
+	}
+}
+.playlistError {
+	font-size: 2rem;
+	color: white;
+	padding: 40px;
+	background: $tsfwBlack;
+	margin: 0;
+	@media (min-width: 940px) {
+		font-size: 2.5rem;
+	}
+}
+iframe {
+	width: 95%;
+	height: 380px;
+	display: block;
+	margin: 0 auto;
+	@media (min-width: 940px) {
+		width: 100%;
+	}
+}
+
+footer {
+	color: $tsfwBlack;
+	text-align: center;
+	border-top: 1px solid rgba(82,79,79,0.2);
+	padding-top: 20px;
+	@include arimo(12, 400);
+	p {
+		margin: 0;
+	}
+}
+.spotifySpan{
+	display: block;
+}
+.creatorLinks{
+	color: $tsfwBlack;
+	margin: 5px;
+}
+.spotify{
+	height: 0;
+	width: 0;
+	padding-bottom: 20px;
+}
+
+.spotify img {
+	margin-left: 2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	transform: translateY(30%);
+}
+
+
+
+
